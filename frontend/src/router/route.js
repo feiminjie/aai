@@ -2,6 +2,7 @@ import { createRouter, createWebHashHistory } from 'vue-router'
 
 const ifcs = () => import('../views/interfaces.vue')
 const adp = () => import('../views/addproject.vue')
+const infiled = () => import('../views/addFiled.vue')
 
 
 const routes = [
@@ -12,8 +13,13 @@ const routes = [
     },
     {
         path: '/ifcs',
-        name: 'home',
+        name: 'ifcs',
         component: ifcs
+    },
+    {
+        path: '/infiled',
+        name: 'infiled',
+        component: infiled
     },
 ]
 

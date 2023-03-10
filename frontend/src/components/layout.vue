@@ -6,18 +6,20 @@
     <el-aside width="200px">
       <el-scrollbar>
         <el-menu router :default-openeds="['1']" :default-active="$route.path">
-          <el-sub-menu index="1">
-            <template #title>
-              <el-icon><CirclePlus /></el-icon>  项目
-            </template>
-            <el-menu-item index="/">添加项目</el-menu-item>
-          </el-sub-menu>
+<!--          <el-sub-menu index="1">-->
+<!--            <template #title>-->
+<!--              <el-icon><CirclePlus /></el-icon>添加项目-->
+<!--            </template>-->
+<!--            <el-menu-item index="/">添加项目</el-menu-item>-->
+<!--          </el-sub-menu>-->
+          <el-menu-item index="/">
+            <el-icon><CirclePlus /></el-icon>添加项目</el-menu-item>
         </el-menu>
       </el-scrollbar>
     </el-aside>
     <el-container>
       <el-main>
-        <el-scrollbar>
+        <el-scrollbar class="all_ce">
           <router-view></router-view>
         </el-scrollbar>
       </el-main>
@@ -51,5 +53,6 @@ const route = useRouter()
 .layout-container-demo .el-main {
   padding: 0;
 }
+
 </style>
 

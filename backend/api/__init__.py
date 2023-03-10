@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 from .v1 import *
-from .v1.endpoint import add_project
+from .v1.endpoint import add_project, add_inter, add_field
 from fastapi.middleware.cors import CORSMiddleware
 
 

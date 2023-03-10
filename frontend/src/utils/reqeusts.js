@@ -1,4 +1,5 @@
 import axios from "axios";
+// axios.defaults.headers["Content-Type"] = "application/json";
 import { ElMessage } from "element-plus";
 
 // 使用 export defalut 就不需要导入时 解包操作 {}
