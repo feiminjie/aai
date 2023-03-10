@@ -36,7 +36,7 @@ async def gtia(id: int):
         field_dict = {}
         field_dict["field_name"] = ijrl["field_name"]
         field_dict["categroys"] = ijrl["categgroy"]
-        field_dict["remark"] = ijrl["remark"]
+        field_dict["remarks"] = ijrl["remark"]
         field_dict["id"] = ijrl["id"]
         field_dict["regions"] = ijrl["regin"]
         if ijrl["musts"] == "1":
