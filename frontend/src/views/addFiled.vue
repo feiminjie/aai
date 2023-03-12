@@ -487,7 +487,7 @@
     <template #footer>
       <span class="dialog-footer">
         <el-button @click="dialogFormVisible = false">取消</el-button>
-        <el-button type="primary" @click="updateRow(eidtform.iid)">
+        <el-button type="primary" @click="updateRow(eidtform.id)">
           确定
         </el-button>
       </span>
@@ -584,7 +584,7 @@ const eidtform = reactive({
   encry_method: '',
   regions: '',
   remarks: '',
-  iid: route.query.id
+  id: ''
 })
 
 const updateRow = (id) => {
